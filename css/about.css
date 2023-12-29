@@ -1,0 +1,39 @@
+/* 3.2 About Section */
+.about-item{
+
+}
+.about-content{
+
+    overflow: hidden;
+}
+.about-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: #8e8e8e solid 1px;
+    padding: 50px 20px;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item .icon{
+    color: var( --mainColor);
+    margin-bottom: 10px;
+}
+.about-item-titel{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.about-item:hover .about-item-titel{
+    color: #fff;
+}
+.about-item-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #999;
+}
+.about-item-link{
+    color: var( --mainColor);
+    text-transform: capitalize;
+}

@@ -1,0 +1,56 @@
+
+  /* service section */
+
+  .service-item{
+    width: 50%;
+    float: left;
+}
+.service-item .section-header{
+    text-align: left;
+}
+.service-item .section-header .line{
+    margin: 0 40px 0 0;
+}
+.service-item-desc{
+    color: #999;
+    margin:0 20px 20px 0;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.service-list{
+    list-style: none;
+}
+.service-list li{
+    margin-bottom: 10px;
+    color: #999;
+}
+.service-list li i{
+    border: 1px solid var( --mainColor);
+    color: var( --mainColor);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    margin-right: 5px;
+}
+.service-item-img img{
+    width: 100%;
+}
+.service-bollets{
+    list-style: none;
+    text-align: center;
+}
+.service-bollets li{
+    background-color: #8e8e8e;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.service-bollets li.active{
+    background-color: var( --mainColor);
+}
+.service-bollets li:hover{
+background-color: var( --mainColor);
+}

@@ -1,0 +1,126 @@
+/* 
+1-Common Styles
+2-General Styles
+3-Sections
+    3.0 Header Section
+    3.1 Home Section 
+    3.2 About Section 
+    3.3 Portfolio Section 
+    3.4 Services Section 
+    3.5 Prices Section 
+    3.6 Teame Section 
+    3.7 Blog  Page 
+    3.8 Contac Section 
+    3.9 Footer Section
+
+
+
+
+
+
+*/
+
+
+/* 2- Common Styles */
+/* 
+    - container
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 (left to right )
+    - hover effect 2 ( Top to bottom)
+*/
+body{
+
+    font-family: 'Varela Round', sans-serif;
+}
+/*3- Genneral Css Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor : #6195ff;
+    --grayColor : #999;
+    --whiteColor : #fff;
+}
+.clear{
+    clear: both;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.7);
+}
+h1,h2,h3,h4,h5,h6{
+font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;
+}
+ul{
+    list-style: none;
+}
+.hover-opacity{
+    transition:opacity .5s;
+}
+.hover-opacity:hover{
+    opacity: 0.7;
+}
+a{
+    text-decoration: none;
+}
+.ltr-effect ,
+.lb-effect{
+position: relative;
+}
+.ltr-effect::after ,
+.lb-effect::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: 0.5s;
+    z-index: -1;
+}
+.ltr-effect::after{
+    width: 0;
+}
+.lb-effect::after{
+    height: 0;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+}
+.lb-effect:hover:after{
+    height: 100%;
+}
+.pd-y{
+    margin: 120px 0;
+}
+.section-header{
+    text-align: center;
+}
+.section-header .section-titel{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin:0 auto 70px auto;
+    background-color: var( --mainColor);
+}
+/* Section Styles */
+
+
+
+
